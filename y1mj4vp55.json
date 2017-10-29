@@ -76,14 +76,13 @@
       "minzoom": 0,
       "maxzoom": 20,
       "layout": {
-        "text-size": 14,
-        "text-field": "*",
+        "text-field": "{撮影計画機関}",
         "text-font": [
           "NotoSansCJKjp-DemiLight"
         ]
       },
       "paint": {
-        "text-color": "#c5192d"
+        "text-color": "rgba(102, 63, 224, 1)"
       }
     }
   ],
