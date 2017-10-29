@@ -3,6 +3,9 @@ task :default do
 end
 
 task :tippecanoe do
-  sh "tippecanoe -o pp.mbtiles -f --layer=pp pp.ndjson"
+  sh "tippecanoe -o pp.mbtiles -f --read-parallel --layer=pp --maximum-zoom=13 --base-zoom=13 pp.ndjson"
 end
 
+task :fan_out do
+  sh "ruby fan-out.rb"
+end
